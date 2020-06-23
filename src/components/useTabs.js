@@ -38,7 +38,7 @@ export default function UseTabs() {
     <div>
       <h1>2. useTabs</h1>
       {content.map((section, index) => (
-        <button onClick={() => changeItem(index)}>{section.tab}</button>
+        <button key={index} onClick={() => changeItem(index)}>{section.tab}</button>
       ))}
       <h4>{currentItem.content}</h4>
     </div>
