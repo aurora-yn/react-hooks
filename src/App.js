@@ -12,6 +12,7 @@ import UseFadeIn from './components/useFadeIn'
 import UseNetwork from './components/useNetwork'
 import UseScroll from './components/useScroll'
 import UseFullscreen from './components/useFullscreen'
+import UseNotification from './components/useNotification'
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
       <UseScroll />
       <hr />
       <UseFullscreen />
+      <hr />
+      <UseNotification />
       <hr />
     </div>
   );

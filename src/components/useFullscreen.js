@@ -22,7 +22,7 @@ const useFullscreen = callback => {
       runCb(true);
     }
   };
-  const exitFull = () => {
+  const exitFullscreen = () => {
     if (document.exitFullscreen) {
       document.exitFullscreen();
     } else if (document.mozCancelFullScreen) {
@@ -34,21 +34,21 @@ const useFullscreen = callback => {
     }
     runCb(false);
   };
-  return { element, triggerFullscreen, exitFull };
+  return { element, triggerFullscreen, exitFullscreen };
 };
 
 export default function UseFullscreen() {
   const onFullscreen = isFullscreen => {
     console.log(isFullscreen ? "It's the fullscreen now" : "It's not the fullscreen")
   }
-  const { element, triggerFullscreen, exitFull } = useFullscreen(onFullscreen);
+  const { element, triggerFullscreen, exitFullscreen } = useFullscreen(onFullscreen);
   return (
     <div>
       <h1>11. useFullscreen</h1>
       <div ref={element}>
         <img width="600" alt="Hallstatt in Austria" src="https://images.unsplash.com/photo-1563387852576-964bc31b73af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1982&q=80" />
         <br />
-        <button onClick={exitFull}>Exit from fullscreen</button>
+        <button onClick={exitFullscreen}>Exit from fullscreen</button>
       </div>
       <br />
       <button onClick={triggerFullscreen}>Make the image into fullscreen</button>

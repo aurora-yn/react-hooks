@@ -54,3 +54,10 @@ Detect a scroll status
 ## 11. useFullscreen
 Make a content into the fullscreen and exit from the fullscreen using for each button
 <br>[check the code](https://github.com/aurora-yn/react-hooks/blob/master/src/components/useFullscreen.js)
+
+## 12. useNotification
+Turn the notification on
+Check Notification API [MDN](https://developer.mozilla.org/en-US/docs/Web/API/notification)
+<br>[check the code](https://github.com/aurora-yn/react-hooks/blob/master/src/components/useNotification.js)
+
+## 13.
