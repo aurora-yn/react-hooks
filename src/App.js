@@ -8,6 +8,7 @@ import UseClick from './components/useClick'
 import UseConfirm from './components/useConfirm'
 import UsePreventLeave from './components/usePreventLeave'
 import UseBeforeLeave from './components/useBeforeLeave'
+import UseFadeIn from './components/useFadeIn'
 
 
 
@@ -28,6 +29,8 @@ function App() {
       <UsePreventLeave />
       <hr />
       <UseBeforeLeave />
+      <hr />
+      <UseFadeIn />
       <hr />
     </div>
   );
