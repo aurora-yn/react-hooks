@@ -43,3 +43,8 @@ Set duration or delay of fade-in <br>
 Able to change transition
 <br>[check the code]()
 
+## 9. useNetwork
+Detect a network status
+<br>[check the code]()
+
+## 10.

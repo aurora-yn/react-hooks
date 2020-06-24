@@ -9,11 +9,9 @@ import UseConfirm from './components/useConfirm'
 import UsePreventLeave from './components/usePreventLeave'
 import UseBeforeLeave from './components/useBeforeLeave'
 import UseFadeIn from './components/useFadeIn'
-
-
+import UseNetwork from './components/useNetwork'
 
 function App() {
-  
   return (
     <div className="App">
       <UseInput />
@@ -31,6 +29,8 @@ function App() {
       <UseBeforeLeave />
       <hr />
       <UseFadeIn />
+      <hr />
+      <UseNetwork />
       <hr />
     </div>
   );
