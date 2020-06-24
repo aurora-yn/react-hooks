@@ -11,6 +11,7 @@ import UseBeforeLeave from './components/useBeforeLeave'
 import UseFadeIn from './components/useFadeIn'
 import UseNetwork from './components/useNetwork'
 import UseScroll from './components/useScroll'
+import UseFullscreen from './components/useFullscreen'
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       <UseNetwork />
       <hr />
       <UseScroll />
+      <hr />
+      <UseFullscreen />
       <hr />
     </div>
   );
