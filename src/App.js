@@ -10,6 +10,7 @@ import UsePreventLeave from './components/usePreventLeave'
 import UseBeforeLeave from './components/useBeforeLeave'
 import UseFadeIn from './components/useFadeIn'
 import UseNetwork from './components/useNetwork'
+import UseScroll from './components/useScroll'
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <UseFadeIn />
       <hr />
       <UseNetwork />
+      <hr />
+      <UseScroll />
       <hr />
     </div>
   );

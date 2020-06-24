@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const useNetwork = onChange => {
   const [status, setStatus] = useState(navigator.onLine); // will get true or false
@@ -11,6 +11,10 @@ const useNetwork = onChange => {
   useEffect(() => {
     window.addEventListener("online", handleChange);
     window.addEventListener("offline", handleChange);
+    return () => {
+      window.removeEventListener("online", handleChange);
+      window.removeEventListener("offline", handleChange);
+    }
   }, []);
   return status;
 };
