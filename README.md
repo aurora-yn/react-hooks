@@ -60,4 +60,10 @@ Turn the notification on
 Check Notification API [MDN](https://developer.mozilla.org/en-US/docs/Web/API/notification)
 <br>[check the code](https://github.com/aurora-yn/react-hooks/blob/master/src/components/useNotification.js)
 
-## 13.
+## 13. useAxios
+```
+npm i axios
+```
+axios: http request <br>
+Need to change url yet not in the local server
+<br>[check the code](https://github.com/aurora-yn/react-hooks/blob/master/src/components/useAxios.js)
